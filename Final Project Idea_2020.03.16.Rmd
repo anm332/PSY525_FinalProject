@@ -1,0 +1,28 @@
+---
+title: "Final Project"
+output: 
+  html_notebook:
+    theme: flatly
+    highlight: espresso
+---
+
+## **Amanda Moeller**
+
+#### **For my final project, I want to build a Shiny app that helps authors identify in-text citations that are missing from their references section.**
+
+## The app should:
+
+### Allow user to copy and paste a text document into the interface
+
+
+#### *STEP 1*: Search for content in the text that's contained in parentheses AND that begins with an upper-case letter (i.e., an author's name) AND includes a four-digit number (i.e., a year)
+
+
+##### This search should identiy all author names contained within a set of parentheses to avoid conflating citations with repeated same authors -- For example, (*Smith*, *1992*) should be identified separately from (*Smith*, Jones, & Fuller, *1992*)
+
+
+#### *STEP 2*: Take all cases identified in the step above and determine whether name(s) AND year are contained in the same paragraph in the references section of the text input. 
+
+
+## **Output: Highlight all instances of text identified in Step 1 and not identified in Step 2 (i.e., citations used in-text but not included in the references section)**
+
